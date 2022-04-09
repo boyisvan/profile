@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg , white, rgb(173, 172, 172),white);
+    font-family: Podkova;
+    overflow: hidden;
+    user-select: none;
+}
+
+#container{
+    border-radius: 50px;
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 10px 15px #c2bfbf;
+    overflow: hidden;
+    z-index: 1;
+}
+/* .photo_cover{
+    position: relative;
+} */
+.photo_avt{
+    width: 100%;
+    height: 280px;
+    /* background-color: red; */
+}
+.photo_cover{
+    max-width: 320px;
+}
+.photo_cover video{
+    width: 100%;
+}
+.autoplay_video{
+    position: absolute;
+    user-select: none;
+}
+.autovideo1{
+    opacity: 0;
+    z-index: 5;
+}
+
+.playvideo_button{
+    position: absolute;
+    font-size: 30px;
+    top: 27%;
+    left: 60%;
+    z-index: 2;
+    user-select: none;
+    background-color: rgb(210, 209, 209);
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 5px rgb(204, 202, 202);
+    animation: zoomin 2s infinite;
+}
+.playvideo_button i{
+    font-size: 15px;
+}
+
+
+@keyframes zoomin {
+    0%,100%{
+        transform: scale(1);
+        border-radius: 10px;
+        color: black;
+    }
+    50%{
+        transform: scale(0.9);
+        border-radius: 12px;
+        box-shadow: 0 10px 10px rgb(159, 157, 157);
+        color: rgb(51, 69, 47);
+    }
+}
+.avatar{
+    z-index: 6;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+.avatar img {
+    outline: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 3px solid white;
+}
+.button_message{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 41%;
+    right: 10%;
+}
+.button_message button{
+    border: none;
+    outline:none;
+    border-radius: 14px;
+    width: 100%;
+    color:white;
+    background-color: #000;
+    height: 100%;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor:pointer;
+}
+.button_message:hover{
+    opacity: 0.8;
+}
+.name{
+    position: absolute;
+    top: 50%;
+}
+.fullname{
+    margin-left: 15px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fullname h2{
+    display: inline-block;
+}
+.fullname i{
+    font-size: 16px;
+    color: rgb(17, 169, 251);
+}
+.title{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+.link_web{
+    width: 100%;
+    height: 70px;
+    /* background-color: #DDDDDD; */
+}
+.fullname p{
+    opacity: 0.8;
+}
+.title{
+    text-align: center;
+    height: 60px;
+}
+.title p:nth-child(1){
+    margin-top: 20px;
+}
+.icon{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+.ico{
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 27px;
+    flex-basis: 20%;
+}
+.ico a{
+    color:black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.modal_loading{
+    visibility: hidden;
+}
+

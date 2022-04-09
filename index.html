@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Đức Văn </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.js"></script>
+
+    <script src="script.js"></script>
+    <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
+</head>
+<body >
+
+    <!-- <div id="bg">
+        <img src="https://cdn.mos.cms.futurecdn.net/DvRcHH4z9chNHqoBr5FS67.jpg" alt="">
+    </div> -->
+
+    <div id="container">
+        <div class="photo_avt">
+
+            <div class="photo_cover" >
+                <video class="autoplay_video autovideo0" muted autoplay loop >
+                    <source src="xedap.mp4" type="video/mp4">
+                </video>
+                <video class="autoplay_video autovideo1" muted controls autoplay loop >
+                    <source src="xedap.mp4" type="video/mp4">
+                </video>
+                <div class="playvideo_button" onclick="PlayVideo()">
+                    <i class="fas fa-music"></i>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/277803608_1092405414883283_6241758995068535010_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=lcGhx9GC_agAX80DUr0&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_XkckD5wC5hDSOo6PoU4e89y3JWyy6yW6UqorRtAb7Iw&oe=62549EE1" alt="">
+            </div>
+            <div class="button_message">
+                <a href="https://www.messenger.com/t/100023415054330/">
+                    <button title="Hãy nhắn cho tôi một tin nhắn qua messenger">Nhắn tin</button>
+                </a>
+            </div>
+
+            <div class="name">
+                <div class="fullname">
+                    <h2>Hoàng Đức Văn</h2>
+                    <i class="fas fa-check-circle"></i>
+                    <p>@ducvan05102002@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="title">
+            <p>" Đi ăn bún r</p>
+            <p>iêu không em ? "</p>
+        </div>
+
+        <div class="link_web">
+            <div class="icon">
+                <div class="facebook ico">
+                    <a href="https://www.facebook.com/vawnnnn">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="instagram ico">
+                    <a href="https://www.instagram.com/hiivawn/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="github ico">
+                    <a href="https://github.com/boyisvan">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tiktok ico">
+                    <a href="https://www.tiktok.com/@venhadivan?is_from_webapp=1&sender_device=pc">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="phone ico " onclick="callphone()">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <audio class="autoplay" style="width: 100%" src="https://tainhacmienphi.biz/get/song/api/227018" autoplay controls muted ></audio>
+     -->
+
+
+
+
+
+
+    <div class="modal_loading">
+        <img src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw700">
+    </div>
+</body>
+</html>
